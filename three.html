@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<style type="text/css">
+
+.main{width:400px;height:300px;background-color:#ccc;position:absolute;top:50%;left:50%;margin-top:-100px;margin-left:-200px;}/*不能自适应高度，增加高度后不在垂直居中*/
+.test{width:400px;height:200px;background-color:#ccc;position:absolute;margin:auto;top:0;bottom:0;left:0;right:0;}/*能自适应高度，需要overflow:auto来防止内容越界溢出*/
+.test2{width:400px;height:200px;background-color:#ccc;top:50%;left:50%; margin:auto; position:absolute;  -webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);  }/*能自适应高度，IE8不支持*/
+
+.side1{width:50px;height:50px;background-color:#fc0;border-bottom-right-radius:50px;}
+.side2{width:50px;height:50px;margin-top:100px;margin-left:350px;background-color:#fc0;border-top-left-radius:50px;float:right;}
+</style>
+</head>
+<body>
+
+<div class="test"><div class="side1"></div><div class="side2"></div></div>  
+
+ </body>
+</html>
